@@ -11,16 +11,15 @@ def listar_comandos_git_basicos():
     
 print(f"{listar_comandos_git_basicos()}")
 
+print('---'*10)
 
 def criar_mensagem_commit(funcao_nome):
-    """
-    Recebe o nome de uma função e retorna uma mensagem de commit padronizada.
-    Exemplo:
-    criar_mensagem_commit("listar_comandos_git_basicos") ->
-    "Implementa função listar_comandos_git_basicos"
-    """
-    pass
+   funcao_nome = {listar_comandos_git_basicos()}
 
+   return f"Implementa a função e mostra a lista de comandos do git {funcao_nome}"
+print(f"{criar_mensagem_commit({listar_comandos_git_basicos()})}")
+
+print('---'*10)
 
 def verificar_tag_valida(tag):
     """
@@ -29,6 +28,7 @@ def verificar_tag_valida(tag):
     """
     pass
 
+print('---'*10)
 
 def gerar_relatorio_final(funcoes_concluidas):
     """
