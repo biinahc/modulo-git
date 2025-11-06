@@ -1,25 +1,26 @@
+import re
 
-def mostrar_mensagem_inicial():
+# def mostrar_mensagem_inicial():
     
-    return "Bem-vindo ao Desafio de Git! :D"
+#     return "Bem-vindo ao Desafio de Git! :D"
 
-print(f"{mostrar_mensagem_inicial()}")
+# print(f"{mostrar_mensagem_inicial()}")
 
-def listar_comandos_git_basicos():
+# def listar_comandos_git_basicos():
     
-    return "git init", "git add", "git commit", "git status", "git push", "git pull", "git clone", "git branch", "git checkout", "git merge", "git log", "git remote"
+#     return "git init", "git add", "git commit", "git status", "git push", "git pull", "git clone", "git branch", "git checkout", "git merge", "git log", "git remote"
     
-print(f"{listar_comandos_git_basicos()}")
+# print(f"{listar_comandos_git_basicos()}")
 
-print('---'*10)
+# print('---'*10)
 
-def criar_mensagem_commit(funcao_nome):
-   funcao_nome = {listar_comandos_git_basicos()}
+# def criar_mensagem_commit(funcao_nome):
+#    funcao_nome = {listar_comandos_git_basicos()}
 
-   return f"Implementa a função e mostra a lista de comandos do git {funcao_nome}"
-print(f"{criar_mensagem_commit({listar_comandos_git_basicos()})}")
+#    return f"Implementa a função e mostra a lista de comandos do git {funcao_nome}"
+# print(f"{criar_mensagem_commit({listar_comandos_git_basicos()})}")
 
-print('---'*10)
+# print('---'*10)
 
 def verificar_tag_valida_sem_regex(tag):    
     if not tag.startswith('v'):
