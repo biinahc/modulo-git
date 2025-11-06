@@ -1,26 +1,25 @@
-import re
 
-# def mostrar_mensagem_inicial():
+def mostrar_mensagem_inicial():
     
-#     return "Bem-vindo ao Desafio de Git! :D"
+    return "Bem-vindo ao Desafio de Git! :D"
 
-# print(f"{mostrar_mensagem_inicial()}")
+print(f"{mostrar_mensagem_inicial()}")
 
-# def listar_comandos_git_basicos():
+def listar_comandos_git_basicos():
     
-#     return "git init", "git add", "git commit", "git status", "git push", "git pull", "git clone", "git branch", "git checkout", "git merge", "git log", "git remote"
+    return "git init", "git add", "git commit", "git status", "git push", "git pull", "git clone", "git branch", "git checkout", "git merge", "git log", "git remote"
     
-# print(f"{listar_comandos_git_basicos()}")
+print(f"{listar_comandos_git_basicos()}")
 
-# print('---'*10)
+print('---'*10)
 
-# def criar_mensagem_commit(funcao_nome):
-#    funcao_nome = {listar_comandos_git_basicos()}
+def criar_mensagem_commit(funcao_nome):
+   funcao_nome = {listar_comandos_git_basicos()}
 
-#    return f"Implementa a função e mostra a lista de comandos do git {funcao_nome}"
-# print(f"{criar_mensagem_commit({listar_comandos_git_basicos()})}")
+   return f"Implementa a função e mostra a lista de comandos do git {funcao_nome}"
+print(f"{criar_mensagem_commit({listar_comandos_git_basicos()})}")
 
-# print('---'*10)
+print('---'*10)
 
 def verificar_tag_valida_sem_regex(tag):    
     if not tag.startswith('v'):
@@ -48,13 +47,14 @@ print(f"verificar_tag_valida_sem_regex('v.'): {verificar_tag_valida_sem_regex('v
 print('---'*10)
 
 def gerar_relatorio_final(funcoes_concluidas):
-    """
-    Recebe uma lista com os nomes das funções implementadas
-    e retorna uma mensagem final do desafio.
+   
+    num_funcoes = len(funcoes_concluidas)
 
-    Exemplo:
-    gerar_relatorio_final(["mostrar_mensagem_inicial", "listar_comandos_git_basicos"])
-    ->
-    "Desafio concluído! 2 funções implementadas com sucesso."
-    """
-    pass
+    return f"Desafio concluídoo! Foi um sucesso :D {num_funcoes} funções implementadas."
+
+print(f"gerar_relatorio_final: {gerar_relatorio_final(['f1', 'f2', 'f3, f4', 'f5'])}")
+
+
+print('---'*10)
+
+print("Desafio Finalizado! Parabéns por completar o desafio de Git!")
